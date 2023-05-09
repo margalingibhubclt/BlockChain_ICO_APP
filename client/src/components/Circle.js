@@ -18,16 +18,16 @@ const Circle = () => {
           <div className="circle border-orange-500">
             <div className="text-center">0.001 Ether</div>
           </div>
-          <div className="circle-text mt-3">Min</div>
-          <div className="circle-text">Investment</div>
+          <div className="circle-text mt-3">SoftCap</div>
+          {/* <div className="circle-text">Investment</div> */}
         </div>
 
         <div className="flex flex-col">
           <div className="circle border-green-500">
             <div className="text-center">3.0 Ether</div>
           </div>
-          <div className="circle-text mt-3">Max</div>
-          <div className="circle-text">Investment</div>
+          <div className="circle-text mt-3">Hardcap</div>
+          {/* <div className="circle-text">Investment</div> */}
         </div>
       </div>
     </>

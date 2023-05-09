@@ -16,7 +16,7 @@ const Header = () => {
         <NavbarMobile />
 
         <div
-          className="font-poppins font-bold text-[21px] hover:text-blue-400"
+          className="font-poppins font-bold text-[40px] hover:text-blue-400"
           onClick={() => navigate("/")}
         >
           ICO App

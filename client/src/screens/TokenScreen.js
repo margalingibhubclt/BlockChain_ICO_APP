@@ -45,7 +45,7 @@ const TokenScreen = () => {
       );
       handleConnectWallet();
     } catch (error) {
-      handleError(error, "STKN");
+      handleError(error, "ICO");
     }
   };
   return (
@@ -57,15 +57,15 @@ const TokenScreen = () => {
             <div className="text-2xl text-center p-4">Token Details</div>
           </div>
 
-          <TokenDetails title="Name" value="Staking Token" />
-          <TokenDetails title="Symbol" value="STKN" />
+          <TokenDetails title="Name" value="ICO" />
+          <TokenDetails title="Symbol" value="RRH" />
           <TokenDetails title="Decimals" value="18" />
 
-          <TokenDetails title="Total Supply" value={millify(10000000)} />
-          <TokenDetails title="Maximum Supply" value={millify(10000000)} />
+          <TokenDetails title="Total Supply" value={millify(5000)} />
+          <TokenDetails title="Maximum Supply" value={millify(5000)} />
           <TokenDetails
             title="Token Address"
-            value="0x569eb2a0f04a7134788d7c02b6b804d9b1d82d09"
+            value="0x1c39BA375faB6a9f6E0c01B9F49d488e101C2011"
           />
         </div>
       </div>
@@ -85,7 +85,7 @@ const TokenScreen = () => {
               {account.balance ? millify(account.balance, { precision: 6 }) : 0}{" "}
               ETH
             </div>
-            <div>STKN : {icoState.investorBalance} STKN</div>
+            <div>ICO : {icoState.investorBalance} ICO</div>
           </div>
         </div>
 
@@ -103,7 +103,7 @@ const TokenScreen = () => {
               type="number"
               min={10}
               max={30000}
-              placeholder="No. of STKN Tokens..."
+              placeholder="No. of RRH Tokens..."
               value={userAmount}
               onChange={(e) => {
                 setUserAmount(e.target.value);

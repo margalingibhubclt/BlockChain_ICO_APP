@@ -1,10 +1,12 @@
 import React, { useEffect, useState, useContext } from "react";
 import millify from "millify";
-
+// import ProgressBar from "./ProgressBar";
+import { Progress } from 'react-sweet-progress';
+import "react-sweet-progress/lib/style.css";
 import getTimeUntil from "../utils/getTimeUntil";
 import SaleEndTimer from "./SaleEndTimer";
 import GlobalContext from "../context/GlobalContext";
-
+import './react-sweet-progress-symbol.css'; //import my custom css;
 const SaleEnds = () => {
   const { handleConnectWallet, icoState } = useContext(GlobalContext);
   // const tokensAvailableInPerc = (icoState.tokensAvailable / 5000000) * 100;
@@ -60,12 +62,15 @@ const SaleEnds = () => {
               text={timer.seconds > 1 ? "Seconds" : "Second"}
             />
           </div>
-
+          <div>Total Deposit
+          <Progress percent={88}
+          />
+          </div>
           {/* Tokens Available */}
           {icoState.tokensAvailable ? (
             <div className="w-full">
               <div className="mb-1">
-                {millify(icoState.tokensAvailable)} STKN
+                {millify(icoState.tokensAvailable)} RRH
               </div>
               <div className="h-4 w-full bg-gray-200 mb-6 rounded-xl text-md">
                 <div

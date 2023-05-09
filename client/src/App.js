@@ -108,16 +108,16 @@ function App() {
                   <Route path="/" element={<HomeScreen />} />
                   <Route path="/home" element={<HomeScreen />} />
                   <Route path="/token" element={<TokenScreen />} />
-                  <Route path="/transaction" element={<TransactionScreen />} />
+                  {/* <Route path="/transaction" element={<TransactionScreen />} />
                   <Route
                     path="/tokenDistribution"
                     element={<TokenDistScreen />}
                   />
                   <Route path="/faucet" element={<FaucetScreen />} />
                   <Route path="/faq" element={<FaqScreen />} />
-                  <Route path="/contact" element={<ContactScreen />} />
-
-                  <Route path="*" element={<ErrorScreen />} />
+                  <Route path="/contact" element={<ContactScreen />} /> */}
+{/* 
+                  <Route path="*" element={<ErrorScreen />} /> */}
                 </>
               </Routes>
             </div>
